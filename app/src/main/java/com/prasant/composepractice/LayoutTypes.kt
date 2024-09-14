@@ -12,28 +12,58 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 
-class LayoutTypes:ComponentActivity() {
+class LayoutTypes : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent(){
-           LinearLayoutDisply()
+        setContent() {
+            LinearLayoutDisply()
         }
     }
 
     @Composable
-    fun LinearLayoutDisply(){
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
-            Text(text = "Prasant Kumar Pradhan", color = Color.Red, fontStyle = FontStyle.Italic, modifier = Modifier.align(
-                Alignment.TopStart))
-            Text(text = "Sitaram Sahoo", color = Color.Blue, fontStyle = FontStyle.Normal, modifier = Modifier.align(
-                Alignment.TopEnd))
-            Text(text = "Nuagaon Bagdia", color = Color.Magenta, fontStyle = FontStyle.Italic, modifier = Modifier.align(
-                Alignment.BottomCenter))
-            Text(text = "Angul Odisha", color = Color.Cyan, fontStyle = FontStyle.Normal, modifier = Modifier.align(
-                Alignment.BottomStart))
+    fun LinearLayoutDisply() {
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Text(
+                text = "Prasant Kumar Pradhan",
+                color = Color.Red,
+                fontStyle = FontStyle.Italic,
+                modifier = Modifier.align(
+                    Alignment.TopStart
+                )
+            )
+            Text(
+                text = "Sitaram Sahoo",
+                color = Color.Blue,
+                fontStyle = FontStyle.Normal,
+                modifier = Modifier.align(
+                    Alignment.TopEnd
+                )
+            )
+            Text(
+                text = "Nuagaon Bagdia",
+                color = Color.Magenta,
+                fontStyle = FontStyle.Italic,
+                modifier = Modifier.align(
+                    Alignment.BottomCenter
+                )
+            )
+            Text(
+                text = "Angul Odisha",
+                color = Color.Cyan,
+                fontStyle = FontStyle.Normal,
+                modifier = Modifier.align(
+                    Alignment.BottomStart
+                )
+            )
 
-            Text(text = "Nuagaon Bagdia", color = Color.Magenta, fontStyle = FontStyle.Italic, modifier = Modifier.align(
-                Alignment.CenterStart))
+            Text(
+                text = "Nuagaon Bagdia",
+                color = Color.Magenta,
+                fontStyle = FontStyle.Italic,
+                modifier = Modifier.align(
+                    Alignment.CenterStart
+                )
+            )
         }
     }
 }
